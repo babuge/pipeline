@@ -1,0 +1,24 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "description": "angular workflow",
+  "main": "index.js",
+  "scripts": {
+    "grunt-task": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.1.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-htmllint": "^0.3.0",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}

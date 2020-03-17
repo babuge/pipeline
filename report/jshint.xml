@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?><jshint><file name="..\Gruntfile.js">
+                    <issue line="0" severity="(error)" char="0" reason="Bad option: 'jshint'." evidence="@charset 'UTF-8';"/>
+                  </file><file name="..\Gruntfile.js">
+                    <issue line="79" severity="(error)" char="2" reason="Missing semicolon." evidence="@charset 'UTF-8';"/>
+                  </file><file name="..\src\main.js">
+                    <issue line="0" severity="(error)" char="0" reason="Bad option: 'jshint'." evidence="@charset 'UTF-8';"/>
+                  </file><file name="..\src\main.js">
+                    <issue line="1" severity="(error)" char="1" reason="Use the function form of 'use strict'." evidence="@charset 'UTF-8';"/>
+                  </file><file name="..\src\main.js">
+                    <issue line="13" severity="(error)" char="3" reason="Missing semicolon." evidence="@charset 'UTF-8';"/>
+                  </file><file name="..\src\main.js">
+                    <issue line="3" severity="(error)" char="1" reason="'angular' is not defined." evidence="@charset 'UTF-8';"/>
+                  </file></jshint>
