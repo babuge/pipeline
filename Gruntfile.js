@@ -38,29 +38,37 @@ module.exports = function(grunt){
             },
             build: ['Gruntfile.js', 'src/**/*.js','!src/bower_components/**/*'],
         },
-        htmllint: {
+        htmlhint_inline: {
             options:{
-                // htmllintrc: false,
-                // reporter: './htmlreporter.js',
-                // reporterOutput: 'report/htmllint.xml',
+                htmlhintrc: '.htmlhintrc',
+                reporter: './htmlreporter.js',
+                reporterOutput: 'report/htmlhint.xml',
                 force: true
             },
-            build: ['src/**/*.html', '!src/bower_components/**/*']
+            dest: {
+                src: ['src/**/*.html', '!src/bower_components/**/*']
+            }
         },
         csslint: {
             options: {
                 csslintrc: '.csslintrc',
                 quiet_all: true,
+                absoluteFilePathsForFormatters: true,
                 formatters:[{id: 'csslint-xml', dest: 'report/csslint.xml'}],
                 force: true
             },
-            build: ['src/**/*.css'],
-            force: true
+            strict: {
+                options: {
+                  import: 2
+                },
+                src: ['src/**/*.css']
+            }
         },
+
         // development watch 
         watch: {
             build: ['src/**/*.js', 'src/**/*.css'],
-            tasks: ['clean', 'jshint', 'htmllint', 'cshint'],
+            tasks: ['clean', 'jshint', 'csslint', 'htmlhint_inline'],
             options: {spawn: false}
         }
 
@@ -75,5 +83,5 @@ module.exports = function(grunt){
 
 
     // 默认任务
-    grunt.registerTask('default', ['clean','jshint', 'htmllint', 'csslint']);
+    grunt.registerTask('default', ['clean','jshint', 'csslint', 'htmlhint_inline']);
 }

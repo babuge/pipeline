@@ -3,6 +3,7 @@ module.exports = {
     reporter: function (res) {
         var len = res.length;
         var str = "";
+        console.log(111111111111111111111111111111111)
         if(len){
           str += `<?xml version="1.0" encoding="utf-8" ?><jshint>`
         }

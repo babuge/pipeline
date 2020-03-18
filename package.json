@@ -4,7 +4,7 @@
   "description": "angular workflow",
   "main": "index.js",
   "scripts": {
-    "grunt-task": "grunt",
+    "grunt-task": "grunt --force",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,7 +17,7 @@
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-htmllint": "^0.3.0",
+    "grunt-htmlhint-inline": "^0.1.8",
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^5.1.0"
   }

@@ -1,0 +1,3 @@
+Linting src/main.html...[31mERROR[39m
+[31m[[39m[33mL13[39m[31m:[39m[33mC1[39m[31m][39m [33mTag must be paired, missing: [ </div> ], start tag match failed [ <div> ] on line 12.[39m
+[31m<[39m/body>
